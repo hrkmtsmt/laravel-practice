@@ -7,6 +7,25 @@
     <title>Hello Laravel</title>
 </head>
 <body>
-    <p>Hello Laravel</p>
+    <h1>Auth Tutorial</h1>
+    <div>
+        @if (Auth::check())
+            <div>
+                <div>
+                    Hello, {{ \Auth::user->name }}!
+                </div>
+                <a href="/logout">Logout</a>
+            </div>
+        @else
+            <ul>
+                <li>
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/register">Sign Up</a>
+                </li>
+            </ul>
+        @endif
+    </div>
 </body>
 </html>
