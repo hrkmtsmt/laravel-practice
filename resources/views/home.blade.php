@@ -12,7 +12,7 @@
         @if (Auth::check())
             <div>
                 <div>
-                    Hello, {{ \Auth::user->name }}!
+                    Hello, {{ \Auth::user()->name }}!
                 </div>
                 <a href="/logout">Logout</a>
             </div>

@@ -35,11 +35,11 @@ Route::get('/login', [
 ])
 ->middleware('guest')->name('login');
 
-Route::get('/login', [
+Route::post('/login', [
     App\Http\Controllers\LoginController::class,
     'authenticate'
 ])
-->middleware('guest')->name('login');
+->middleware('guest');
 
 Route::get('/logout', [
     App\Http\Controllers\LoginController::class,

@@ -20,7 +20,7 @@
     </div>
     <div>
         <label for="password">
-          <div>Email</div>
+          <div>password</div>
           <input type="password" id="password" name="password" value="{{ old('password') }}" />
         </label>
     </div>
