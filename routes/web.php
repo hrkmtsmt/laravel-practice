@@ -46,3 +46,5 @@ Route::get('/logout', [
     'logout'
 ])
 ->middleware('auth')->name('logout');
+
+Route::get('/sample', \App\Http\Actions\Todo\GetAction::class);
