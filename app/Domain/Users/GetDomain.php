@@ -9,7 +9,12 @@
         {
             return [
                 'users' => [
-                    'name' => 'J Dilla'
+                    [
+                        'name' => 'J Dilla'
+                    ],
+                    [
+                        'name' => 'Pete Rock'
+                    ]
                 ]
             ];
         }

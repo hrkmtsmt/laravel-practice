@@ -10,6 +10,8 @@
     use App\Domain\Users\GetDomain as Domain;
     use App\Http\Responders\Users\GetResponder as Responder;
 
+    use Doctrine\ORM\EntityManagerInterface as EntityManager;
+
     class GetAction extends Controller
     {
         protected $Domain;
