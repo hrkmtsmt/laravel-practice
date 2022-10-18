@@ -23,7 +23,7 @@ class Users
     /**
      * @ORM\Column(type="string", nullable=false, unique=false, length=255)
      */
-    private string $;
+    private string $name;
 
     /**
      * @ORM\Column(type="string", nullable=false, unique=true, length=255)
