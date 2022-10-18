@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Entity\Artist;
+namespace Artists\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="artists")
  */
-class Artist {
+class ArtistEntity {
 
   /**
    * @ORM\Id
